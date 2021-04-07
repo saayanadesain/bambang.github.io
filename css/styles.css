@@ -15,7 +15,7 @@ body {
 }
 
 /* Slider */
-.tpr h3, .ct h3, .ut h3 {
+.tpr h3, .ct h3, .ut h3, .gnr h3 {
   font-size: 20px;
   font-weight: 600;
   padding-top: 1px;
@@ -140,6 +140,7 @@ h6 {
   border: 1px solid grey;
   margin-top: 7px;
   margin-bottom: 7px;
+  visibility: hidden;
 }
 
 /* Update terakhir */
@@ -161,7 +162,7 @@ h6 {
   background-color: grey;
   margin: 5px;
   display: none;
-  border: 1px solid lightgrey;
+  /* border: 1px solid lightgrey; */
 }
 
 #loadMore {
@@ -213,12 +214,31 @@ h6 {
     padding-bottom: 15px;
   }
 
+  .navbar .d-flex {
+    margin-top: 25px;
+  }
+
+  .slide {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
   /* Chapter Terbaru */
+  .konten {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #e0f1ff;
+    margin-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
   .chater {
     width: 100%;
     height: 98vh;
     overflow: hidden;
-    background-color: #e6f0f7;
   }
 
   .scr {
@@ -231,9 +251,10 @@ h6 {
 
   .bx {
     width: 100%;
-    height: 125px;
+    height: 150px;
     background-color: transparent;
     margin: auto;
+    margin-bottom: 10px;
   }
 
   .bx:hover {
@@ -241,15 +262,15 @@ h6 {
   }
 
   .bx-img {
-    width: 100px;
+    width: 120px;
   }
 
   .dt {
     position: relative;
-    margin-top: -123px;
-    margin-left: 100px;
+    margin-top: -148px;
+    margin-left: 120px;
     height: 100%;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
   }
 
   .dt h5 {
@@ -273,8 +294,8 @@ h6 {
   }
 
   .dt .chp {
-    margin-left: 99px;
-    margin-top: -50px;
+    margin:auto;
+    margin-top: 0px;
     position:relative;
   }
 
@@ -288,23 +309,26 @@ h6 {
     font-weight: 600;
   }
 
-  .tpr, .ct, .ut {
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    text-align: center;
+  .tpr, .ct, .ut, .gnr {
+    color: black;
+    background-color: transparent;
+    text-align: left;
     margin-top: 20px;
     width: 100%;
+    font-weight: 700;
+    border-bottom: 2px solid grey;
+    border-radius: 0;
   }
 
-  .ut, .ct {
-    margin-top: 10px;
-  }
 
-  .tpr h3, .ct h3, .ut h3 {
-    font-size: 14px;
+  .tpr h3, .ct h3, .ut h3, .gnr h3 {
+    font-size: 18px;
     margin: auto;
     padding: 5px;
+  }
+
+  .ct, .ut {
+    margin: auto;
   }
 
   /* Update Terakhir */
@@ -324,7 +348,7 @@ h6 {
   }
 
   .content {
-    height: 125px;
+    height: 150px;
     width: 100%;
     font-size: 24px; /* centering text just for view */
     text-align: center;
@@ -362,7 +386,7 @@ h6 {
   .bx-img2 {
     position: relative;
     height: 100%;
-    width: 100px;
+    width: 120px;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -381,12 +405,11 @@ h6 {
   }
 
   .dtl {
-    margin-top: -123px;
-    margin-left: 100px;
+    margin-top: -148px;
+    margin-left: 120px;
     height: 100%;
     text-align: left;
     padding-left: 8px;
-    padding-top: 8px;
   }
 
   .dtl h5 {
@@ -432,8 +455,8 @@ h6 {
   }
 
   .dtl .chap {
-    margin-left: 99px;
-    margin-top: -90px;
+    margin: auto;
+    margin-top: -40px;
   }
 
   .dtl .chap span {
@@ -446,13 +469,42 @@ h6 {
     font-weight: 600;
   }
 
+  /* Genres */
+  .genre {
+    height: 120px;
+    margin-top: -10px;
+  }
+
+
+  #id01 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #id01 li {
+    display: inline-block;
+    width: 32%;
+    text-align: left;
+  }
+
+  #id01 li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #id01 li a:hover {
+    color: green;
+  }
+
   /* Footer */
   .footer {
     margin-top: 15px;
-    height: 60px;
+    height: 70px;
     color: white;
-    padding-top: 10px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .cr, .bm {
@@ -468,7 +520,6 @@ h6 {
 /* Mobile Version (Landscape) */
 @media (min-width: 576.1px) {
   /*navbar*/
-
   .navbar .navbar-brand {
     font-weight: 700;
     margin-left: 0px;
@@ -477,20 +528,43 @@ h6 {
 
   .navbar .navbar-nav {
     margin-left: 10px;
+    padding-bottom: 0px;
+    margin-top: 0px;
   }
 
   .nav-item {
-    height: 32px;
+    height: 28px;
+    margin-bottom: 0px;
+  }
+
+  .nav-link{
+    position: relative;
+    margin: auto;
   }
 
   .navbar li a {
     font-weight: 400;
   }
 
+  .d-flex {
+    margin-top: 25px;
+  }
+
   /* Chapter Terbaru */
-  .tpr {
+  .konten {
+    width: 100%;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    background-color: #e0f1ff;
+    margin-top: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .tpr {
+    margin: auto;
     width: 100%;
   }
 
@@ -499,10 +573,9 @@ h6 {
   }
 
   .chater {
-    width: 53%;
+    width: 35%;
     height: 100vh;
     margin-left: auto;
-    margin-right: auto;
   }
 
   .scr {
@@ -516,8 +589,9 @@ h6 {
 
   .bx {
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: transparent;
+    margin-bottom: 10px;
   }
 
   .bx:hover {
@@ -525,17 +599,17 @@ h6 {
   }
 
   .bx-img {
-    width: 80px;
+    width: 90px;
   }
 
   .dt {
     position: relative;
-    margin-top: -98px;
-    margin-left: 80px;
+    margin-top: -118px;
+    margin-left: 90px;
     height: 100%;
     padding-left: 8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 
   .dt h5 {
@@ -553,17 +627,15 @@ h6 {
 
   .dt .tgl h6 {
     font-size: 12px;
-    margin-top: 5px;
     color: black;
     font-weight: 400;
   }
 
    .dt .chp {
-
-    margin-left: 80px;
-    margin-top: -50px;
+    margin: auto;
     width: 100%;
     position:relative;
+    margin-top: -9px;
   }
 
   .dt .chp span {
@@ -576,22 +648,25 @@ h6 {
     font-weight: 600;
   }
 
-  .tpr, .ct, .ut {
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    text-align: center;
+  .tpr, .ct, .ut, .gnr {
+    color: black;
+    background-color: transparent;
+    text-align: left;
     margin-top: 20px;
     width: 100%;
+    font-weight: 700;
+    border-bottom: 2px solid grey;
+    border-radius: 0;
   }
 
-  .tpr h3, .ct h3, .ut h3 {
-    font-size: 16px;
+
+  .tpr h3, .ct h3, .ut h3, .gnr h3 {
+    font-size: 18px;
     margin: auto;
     padding: 5px;
   }
 
-  .ut, .ct {
+  .ct, .ut {
     margin: auto;
   }
 
@@ -599,8 +674,9 @@ h6 {
   .upter {
     display: flex;
     position: relative;
-    width: 45%;
+    width: 65%;
     height: 100vh;
+    margin: auto;
   }
 
   .upter-sec {
@@ -617,13 +693,16 @@ h6 {
   }
 
   .content {
-    height: 100px;
-    width: 100%;
+    height: 120px;
+    width: 47%;
     font-size: 24px; /* centering text just for view */
     text-align: center;
     background-color: transparent;
-    margin: 5px;
     overflow: hidden;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 13px;
+    margin-bottom: 10px;
   }
 
   #loadMore {
@@ -655,7 +734,7 @@ h6 {
   .bx-img2 {
     position: relative;
     height: 100%;
-    width: 80px;
+    width: 85px;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -664,7 +743,6 @@ h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
     transition: transform 0.5s;
   }
 
@@ -674,12 +752,13 @@ h6 {
   }
 
   .dtl {
-    margin-top: -108px;
-    margin-left: 80px;
+    margin-top: -118px;
+    margin-left: 83px;
     height: 100%;
     text-align: left;
     padding-left: 8px;
-    padding-top: 5px;
+    padding-top: 10px;
+    position: relative;
   }
 
   .dtl h5 {
@@ -738,14 +817,56 @@ h6 {
     font-weight: 600;
   }
 
-  /* Footer */
-  .footer {
-    margin-top: 15px;
-    height: 50px;
-    color: white;
-    padding-top: 12px;
+  /* Genres */
+  .genre {
+    height: 100px;
+  }
+
+  .gnr {
+    margin-top: 12px;
+  }
+
+  #id01 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #id01 li {
+    display: inline-block;
+    width: 19.4%;
+    text-align: left;
+  }
+
+  #id01 li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
     font-size: 14px;
   }
+
+  #id01 li a:hover {
+    color: green;
+  }
+
+  /* Footer */
+  .footer {
+    height: 50px;
+    color: white;
+    font-size: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .ftr {
+    position: relative;
+    height: 100%;
+  }
+
+  .cr, .bm {
+    margin: auto;
+  }
+
 }
 
 /* Tablet */
@@ -771,6 +892,18 @@ h6 {
   }
 
   /* Chapter Terbaru */
+  .konten {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #e0f1ff;
+    margin-top: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
   .chater {
     width: 35%;
     height: 100vh;
@@ -790,6 +923,7 @@ h6 {
     width: 100%;
     height: 140px;
     background-color: transparent;
+    margin-bottom: 10px;
   }
 
   .bx:hover {
@@ -798,6 +932,7 @@ h6 {
 
   .bx-img {
     width: 100px;
+    height: 100%;
   }
 
   .dt {
@@ -805,9 +940,6 @@ h6 {
     margin-top: -138px;
     margin-left: 100px;
     height: 100%;
-    padding-left: 8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
 
   .dt h5 {
@@ -831,10 +963,9 @@ h6 {
   }
 
   .dt .chp{
-    margin-left: -10px;
-    margin-top: 0px;
-    position:relative;
-    text-align: center;
+    margin: auto;
+    text-align: left;
+    width: 100%;
   }
 
   .dt .chp span {
@@ -845,7 +976,7 @@ h6 {
     color: white;
   }
 
-  .tpr, .ct, .ut {
+  .tpr, .ct, .ut, .gnr {
     color: black;
     background-color: transparent;
     text-align: left;
@@ -857,8 +988,8 @@ h6 {
   }
 
 
-  .tpr h3, .ct h3, .ut h3 {
-    font-size: 16px;
+  .tpr h3, .ct h3, .ut h3, .gnr h3 {
+    font-size: 20px;
     margin: auto;
     padding: 5px;
   }
@@ -887,7 +1018,7 @@ h6 {
   }
 
   .content {
-    height: 110px;
+    height: 120px;
     width: 47%;
     font-size: 24px; /* centering text just for view */
     text-align: center;
@@ -925,7 +1056,7 @@ h6 {
   .bx-img2 {
     position: relative;
     height: 100%;
-    width: 80px;
+    width: 90px;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -944,12 +1075,13 @@ h6 {
   }
 
   .dtl {
-    margin-top: -108px;
-    margin-left: 80px;
+    margin-top: -118px;
+    margin-left: 90px;
     height: 100%;
     text-align: left;
     padding-left: 8px;
-    padding-top: 5px;
+    padding-top: 8px;
+    position: relative;
   }
 
   .dtl h5 {
@@ -1008,11 +1140,48 @@ h6 {
     font-weight: 600;
   }
 
+  /* Genres */
+  .genre {
+    padding-top: 2px;
+    height: 125px;
+  }
+
+  #id01 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #id01 li {
+    display: inline-block;
+    margin: 5px;
+    width: 18%;
+  }
+
+  #id01 li a {
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  #id01 li a:hover {
+    color: green;
+  }
+
   /* Footer */
   .footer {
-    height: 50px;
+    height: 70px;
     color: white;
     padding-top: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .cr, .bm {
+    margin: auto;
   }
 }
 
@@ -1024,7 +1193,7 @@ h6 {
   }
 
   .nav-item {
-    padding-bottom: 40px;
+    padding-bottom: 45px;
   }
 
   .navbar li a {
@@ -1041,7 +1210,24 @@ h6 {
     margin-right: 50px
   }
 
+  .navbar .d-flex {
+    margin: auto;
+    margin-right: 30px;
+  }
+
   /* Chapter Terbaru */
+  .konten {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #e0f1ff;
+    margin-top: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
   .chater {
     width: 33%;
     height: 100vh;
@@ -1050,7 +1236,7 @@ h6 {
 
   .scr {
     width: 100%;
-    height: 94vh;
+    height: 93vh;
     border-radius: 10px;
     margin-top: 5px;
     /* background-color: #f5f5f5; */
@@ -1061,6 +1247,7 @@ h6 {
     width: 100%;
     height: 150px;
     background-color: transparent;
+    margin-bottom: 10px;
   }
 
   .bx:hover {
@@ -1069,6 +1256,7 @@ h6 {
 
   .bx-img {
     width: 110px;
+    height: 100%;
   }
 
   .dt {
@@ -1077,8 +1265,7 @@ h6 {
     margin-left: 110px;
     height: 100%;
     padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
   }
 
   .dt h5 {
@@ -1102,8 +1289,7 @@ h6 {
   }
 
   .dt .chp {
-    margin-left: -37px;
-    margin-top: 0px;
+    margin: auto;
     position:relative;
   }
 
@@ -1117,7 +1303,7 @@ h6 {
     font-weight: 600;
   }
 
-  .tpr, .ct, .ut {
+  .tpr, .ct, .ut, .gnr {
     color: black;
     background-color: transparent;
     text-align: left;
@@ -1129,8 +1315,8 @@ h6 {
   }
 
 
-  .tpr h3, .ct h3, .ut h3 {
-    font-size: 16px;
+  .tpr h3, .ct h3, .ut h3, .gnr h3 {
+    font-size: 20px;
     margin: auto;
     padding: 5px;
   }
@@ -1197,7 +1383,7 @@ h6 {
   .bx-img2 {
     position: relative;
     height: 100%;
-    width: 100px;
+    width: 110px;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -1217,20 +1403,22 @@ h6 {
 
   .dtl {
     margin-top: -148px;
-    margin-left: 100px;
+    margin-left: 110px;
     height: 100%;
     text-align: left;
     padding-left: 8px;
-    padding-top: 8px;
+    padding-top: 10px;
+    position: relative;
   }
 
   .dtl h5 {
+    color: black;
     overflow: hidden;
     position: relative;
     font-weight: 700;
     font-size: 16px;
     text-align: left;
-    width: 100%;
+    width: 97%;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -1280,11 +1468,44 @@ h6 {
     font-weight: 600;
   }
 
+  /* Genres */
+  .genre {
+    padding-top: 1px;
+    height: 125px;
+  }
+
+  #id01 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #id01 li {
+    display: inline-block;
+    margin: 5px;
+    width: 18%;
+  }
+
+  #id01 li a {
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  #id01 li a:hover {
+    color: green;
+  }
+
   /* Footer */
   .footer {
-    height: 50px;
+    height: 70px;
     color: white;
     padding-top: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -1314,6 +1535,18 @@ h6 {
   }
 
   /* Chapter Terbaru */
+  .konten {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #e0f1ff;
+    margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .chater {
     width: 30%;
     height: 100vh;
@@ -1322,7 +1555,7 @@ h6 {
 
   .scr {
     width: 100%;
-    height: 92vh;
+    height: 93vh;
     border-radius: 10px;
     margin-top: 5px;
     /* background-color: #f5f5f5; */
@@ -1333,6 +1566,7 @@ h6 {
     width: 100%;
     height: 150px;
     background-color: transparent;
+    margin-bottom: 10px;
   }
 
   .bx:hover {
@@ -1349,8 +1583,6 @@ h6 {
     margin-left: 110px;
     height: 100%;
     padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
 
   .dt h5 {
@@ -1374,7 +1606,8 @@ h6 {
   }
 
   .dt .chp {
-    margin-left: -43px;
+    margin-left: auto;
+    text-align: left;
   }
 
   .dt .chp span {
@@ -1387,7 +1620,7 @@ h6 {
     font-weight: 600;
   }
 
-  .tpr, .ct, .ut {
+  .tpr, .ct, .ut, .gnr {
     color: black;
     background-color: transparent;
     text-align: left;
@@ -1399,13 +1632,13 @@ h6 {
   }
 
 
-  .tpr h3, .ct h3, .ut h3 {
-    font-size: 16px;
+  .tpr h3, .ct h3, .ut h3, .gnr h3 {
+    font-size: 20px;
     margin: auto;
     padding: 5px;
   }
 
-  .ct, .ut {
+  .ct, .ut, .gnr {
     margin: auto;
   }
 
@@ -1446,7 +1679,7 @@ h6 {
     margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     background-color: blue;
     transition: .3s;
   }
@@ -1467,7 +1700,7 @@ h6 {
   .bx-img2 {
     position: relative;
     height: 100%;
-    width: 100px;
+    width: 110px;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -1486,21 +1719,23 @@ h6 {
   }
 
   .dtl {
-    margin-top: -148px;
-    margin-left: 100px;
+    margin-top: -150px;
+    margin-left: 110px;
     height: 100%;
     text-align: left;
     padding-left: 8px;
     padding-top: 8px;
+    position: relative;
   }
 
   .dtl h5 {
+    color: black;
     overflow: hidden;
     position: relative;
     font-weight: 700;
     font-size: 16px;
     text-align: left;
-    width: 100%;
+    width: 97%;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -1550,11 +1785,45 @@ h6 {
     font-weight: 600;
   }
 
+  /* Genres */
+  .genre {
+    padding-top: 25px;
+    height: 150px;
+  }
+
+  #id01 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #id01 li {
+    display: inline-block;
+    margin: 5px;
+    width: 18%;
+  }
+
+  #id01 li a {
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  #id01 li a:hover {
+    color: green;
+  }
+
   /* Footer */
   .footer {
-    height: 50px;
+    height: 70px;
     color: white;
-    padding-top: 12px;
+    padding-top: 10px;
+    margin-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
 }
