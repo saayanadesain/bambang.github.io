@@ -174,7 +174,7 @@ h6 {
 @media (max-width: 576px) {
   /*navbar*/
   .navbar{
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 9999999;
@@ -192,6 +192,7 @@ h6 {
 
   .nav-item {
     height: 29px;
+    width: 30%;
   }
 
   .navbar li a {
@@ -244,6 +245,7 @@ h6 {
     height: 225px;
     margin-top: 10px;
   }
+
 
   .box{
     width: 100px;
