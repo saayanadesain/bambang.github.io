@@ -173,6 +173,13 @@ h6 {
 /* Mobile Version (Potrait) */
 @media (max-width: 576px) {
   /*navbar*/
+  .navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999999;
+  }
+
   .navbar .navbar-brand {
     font-weight: 700;
     margin-left: 0px;
