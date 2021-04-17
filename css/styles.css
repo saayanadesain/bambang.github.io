@@ -192,7 +192,7 @@ h6 {
 
   .nav-item {
     height: 29px;
-    width: 30%;
+    width: 100px;
   }
 
   .navbar li a {
@@ -245,7 +245,6 @@ h6 {
     height: 225px;
     margin-top: 10px;
   }
-
 
   .box{
     width: 100px;
@@ -332,16 +331,16 @@ h6 {
     background-color: #e0f1ff;
   }
 
-  .scr {
-    width: 100%;
-    height: 90vh;
-    /* background-color: #f5f5f5; */
-    margin-top: 5px;
-  }
-
   .konten-ut{
     display: inline-block;
     margin-top: 15px;
+  }
+
+  .scr {
+    width: 100%;
+    height: 330px;
+    /* background-color: #f5f5f5; */
+    margin-top: 5px;
   }
 
   .bx{
@@ -406,13 +405,16 @@ h6 {
     height: 98vh;
   }
 
-  /* Update terakhir */
   .flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%
+  }
+
+  .scr2{
+    height: 92vh;
   }
 
   .content{
@@ -448,8 +450,6 @@ h6 {
     margin-top: 15px;
   }
 
-
-
   .noContent {
     color: #000 !important;
     background-color: transparent !important;
@@ -477,6 +477,13 @@ h6 {
 /* Mobile Version (Landscape) */
 @media (min-width: 576.1px) {
   /*navbar*/
+  .navbar{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 9999999;
+  }
+
   .navbar .navbar-brand {
     font-weight: 700;
     margin-left: 0px;
@@ -485,331 +492,276 @@ h6 {
 
   .navbar .navbar-nav {
     margin-left: 10px;
-    padding-bottom: 0px;
-    margin-top: 0px;
   }
 
   .nav-item {
-    height: 35px;
-    margin-bottom: 0px;
-  }
-
-  .nav-link{
-    position: relative;
-    margin: auto;
+    height: 29px;
+    width: 100px;;
   }
 
   .navbar li a {
-    font-weight: 400;
+    font-size: 16px;
   }
 
-  .d-flex {
-    margin-top: 25px;
+  .search-bar{
+    display: none;
   }
 
-  /* Chapter Terbaru */
-  .konten {
+  .search-bar-hp {
+    margin-top: 80px;
     width: 100%;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    background-color: #e0f1ff;
-    margin-top: 20px;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 
-  .tpr {
-    margin: auto;
-    width: 100%;
-  }
-
-  .ktn {
-    width: 100%;
-  }
-
-  .chater {
-    width: 35%;
-    height: 100vh;
-    margin-left: auto;
-  }
-
-  .scr {
-    width: 100%;
-    height: 89vh;
-    border-radius: 10px;
-    margin-top: 5px;
-    /* background-color: #f5f5f5; */
-    /* border: 1px solid grey; */
-  }
-
-  .bx {
-    width: 100%;
-    height: 120px;
-    background-color: transparent;
-    margin-bottom: 10px;
-  }
-
-  .bx:hover {
-    box-shadow: none;
-  }
-
-  .bx-img {
-    width: 90px;
-  }
-
-  .dt {
-    position: relative;
-    margin-top: -118px;
-    margin-left: 90px;
-    height: 100%;
-    padding-left: 5px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-  }
-
-  .dt h5 {
-    font-size: 14px;
-  }
-
-  .dt .rating {
-    margin-top: -14px;
-  }
-
-  .dt .rating span {
+  .search-bar-hp input, .search-bar-hp button{
     font-size: 12px;
   }
 
-  .dt .reader {
-    font-size: 10px;
-    margin-top: -2px;
-  }
-
-  .dt .tgl h6 {
-    font-size: 12px;
-    color: black;
-    margin-top: 1px;
-  }
-
-  .dt .chp {
-    margin: auto;
-    width: 100%;
-    position:relative;
-    margin-top: -9px;
-    position: absolute;
-  }
-
-  .dt .chp span {
-    margin-top: -50px;
-    background-color: #45b051;
-    border-radius: 10px;
-    padding: 3px 8px 3px 8px;
-    font-size: 13px;
-    color: white;
-    font-weight: 600;
-  }
-
+  /*title section*/
   .tpr, .ct, .ut, .gnr {
     color: black;
     background-color: transparent;
     text-align: left;
-    margin-top: 20px;
     width: 100%;
-    font-weight: 700;
     border-bottom: 2px solid grey;
     border-radius: 0;
   }
 
-
   .tpr h3, .ct h3, .ut h3, .gnr h3 {
-    font-size: 18px;
+    font-size: 14px;
     margin: auto;
     padding: 5px;
+    font-weight: bold;
   }
 
   .ct, .ut {
     margin: auto;
   }
 
-  /* Update Terakhir */
-  .upter {
-    display: flex;
-    position: relative;
-    width: 65%;
-    height: 100vh;
-    margin: auto;
+  /* Slide */
+  .slide{
+    margin-top: 15px;
+    width: 100%;
+    height: 270px;
   }
 
-  .upter-sec {
+  .slider{
+    margin-top: 10px;
+  }
+
+  .box{
+    width: 100px;
+    height: 225px;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 0px;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+
+  .box:hover{
+    box-shadow: none;
+  }
+
+  .box-img{
     width: 100%;
+    height: 140px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .item{
+    height: 230px;
+  }
+
+  .detail{
+    margin-top: 5px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .detail h5 a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: left;
+  }
+
+  .detail h5 a:hover{
+    color: green;
+  }
+
+  .rating span {
+    color: orange;
+    font-size: 10px;
+  }
+
+  .rating {
+    margin-top: -15px;
+  }
+
+  .detail .reader {
+    color: grey;
+    font-size: 10px;
+    margin-top: -3px;
+  }
+
+  .detail .og {
+    font-size: 10px;
+    margin-top: 0px;
+  }
+
+  /* Chapter Terbaru */
+  .konten {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    align-content: center;
+    padding-left: 15px;
+  }
+
+  .chater {
+    width: 28%;
+    padding-top: 5px;
+  }
+
+  .konten-ut{
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .scr {
+    width: 100%;
+    height: 430px;;
+    /* background-color: #f5f5f5; */
+    margin-top: 5px;
+  }
+
+  .bx{
+    float: left;
+    display: block;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 0px;
+    display: flex;
+  }
+
+  .bx .box-img{
+    width: 140px;
+    height: 100%;
+  }
+
+  .bx .box-img{
+    object-fit: cover;
+  }
+
+  .bx .detail{
+    position: relative;
+    padding-left: 5px;
+    padding-top: 2px;
+  }
+
+  .bx .rating span {
+    color: orange;
+    font-size: 10px;
+  }
+
+   .bx .rating {
+    margin-top: -16px;
+  }
+
+  .bx .og {
+    font-size: 10px;
+    margin-top: -3px;
+    margin-bottom: 3px;
+  }
+
+  .chp {
+    position: absolute;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #45b051;
+    width: 50px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Update Terakhir */
+  .q{
+      width: 100%;
+  }
+
+  .upter {
+    margin-top: 6px;
+    width: 72%;
+    height: 700px;
   }
 
   .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     width: 100%
   }
 
-  .content {
-    height: 120px;
-    width: 49%;
-    font-size: 24px; /* centering text just for view */
-    text-align: center;
-    background-color: transparent;
-    overflow: hidden;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 3px;
-    margin-bottom: 10px;
+  .scr2{
+    height: 667px;
+  }
+
+  .content{
+    display: none;
+    width: 33%;
+    height: 95px;
+    margin-right: 1px;
+    margin-bottom: 8px;
+  }
+
+  .content .bx{
+    width: 100%;
+    height: 100%;
   }
 
   #loadMore {
-    width: 200px;
+    width: 150px;
     color: #fff;
     display: block;
     text-align: center;
-    margin: 20px auto;
-    padding: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px;
     border-radius: 10px;
-    border: 1px solid transparent;
     background-color: blue;
     transition: .3s;
+    text-decoration: none;
   }
 
-  #loadMore:hover {
-    color: blue;
-    background-color: #fff;
-    border: 1px solid blue;
-    text-decoration: none;
+  .pg {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
   }
 
   .noContent {
     color: #000 !important;
     background-color: transparent !important;
     pointer-events: none;
-  }
-
-  .bx-img2 {
-    position: relative;
-    height: 100%;
-    width: 85px;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-
-  .bx-img2 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s;
-  }
-
-  .bx-img2 img:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-  }
-
-  .dtl {
-    margin-top: -118px;
-    margin-left: 83px;
-    height: 100%;
-    text-align: left;
-    padding-left: 8px;
-    padding-top: 1px;
-    position: relative;
-  }
-
-  .dtl h5 {
-    color: black;
-    overflow: hidden;
-    position: relative;
-    font-weight: 700;
-    font-size: 14px;
-    text-align: left;
-    width: 100%;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-
-  .dtl h5 a {
-    text-decoration: none;
-    color: black;
-    letter-spacing: 0.5px;
-  }
-
-  .stars {
-    margin-top: -50px;
-  }
-
-  .stars span {
-    color: orange;
-    font-size: 12px;
-  }
-
-  .dtl .rdr {
-    color: grey;
-    font-size: 10px;
-    margin-top: -80px;
-    display: visible;
-  }
-
-  .dtl .date h6 {
-    color: black;
-    margin-top: -42px;
-    font-size: 12px;
-  }
-
-  .dtl .chap {
-    margin-top: -45px;
-    color: black;
-  }
-
-  .dtl .chap span {
-    background-color: #45b051;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding: 3px 8px 3px 8px;
-    font-size: 14px;
-    color: white;
-    font-weight: 600;
-  }
-
-  /* Genres */
-  .genre {
-    height: 100px;
-  }
-
-  .gnr {
-    margin-top: 12px;
-  }
-
-  #id01 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  #id01 li {
-    display: inline-block;
-    width: 19.4%;
-    text-align: left;
-  }
-
-  #id01 li a {
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-  }
-
-  #id01 li a:hover {
-    color: green;
   }
 
   /* Footer */
