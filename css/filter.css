@@ -1,0 +1,426 @@
+/* Mobile Version (Potrait) */
+@media (max-width: 576px) {
+  .filterDiv {
+    width: 334px;
+    position: relative;
+    /*border: 1px solid lightgrey;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .genres-content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-height: 95vh;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  #myBtnContainer {
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .genre-list {
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+
+  .genres-content .bt {
+    border: none;
+    outline: none;
+    padding: 2px 2px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .genres-content .bt:hover {
+    background-color: #ddd;
+  }
+
+  .genres-content .bt.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .dt {
+    padding-top: 8px;
+    width: 30vh;
+  }
+
+  .dt h5 {
+    font-size: 18px;
+  }
+
+  .genre-list .ls {
+    font-size: 15px;
+    margin-top: 1px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .genre-list .og {
+    font-size: 16px;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .genre-list .og span {
+    font-weight: 700;
+  }
+}
+
+/* Mobile Version (Landscape) */
+@media (min-width: 576.1px) {
+  .filterDiv {
+    float: left;
+    width: 32.1%;
+    margin: 2px;
+    display: none;
+    /*border: 1px solid lightgrey;*/
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .genres-content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-height: 95vh;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #myBtnContainer {
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .genre-list {
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+
+  .genres-content .bt {
+    border: none;
+    outline: none;
+    padding: 2px 2px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .genres-content .bt:hover {
+    background-color: #ddd;
+  }
+
+  .genres-content .bt.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .genre-list h5 {
+    font-size: 14px;
+  }
+
+  .dt {
+    padding-top: 8px;
+  }
+
+  .genre-list .rating span {
+    font-size: 13px;
+  }
+
+  .genre-list .ls {
+    font-size: 12px;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .genre-list .og {
+    font-size: 12px;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .genre-list .og span {
+    font-weight: 700;
+  }
+}
+
+/* Tablet */
+@media (min-width: 767px) {
+  .filterDiv {
+    float: left;
+    width: 233px;
+    margin: 2px;
+    display: none;
+    /*border: 1px solid lightgrey;*/
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .genres-content {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    min-height: 95vh;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #myBtnContainer {
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .genre-list {
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+
+  .genres-content .bt {
+    border: none;
+    outline: none;
+    padding: 5px 6px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .genres-content .bt:hover {
+    background-color: #ddd;
+  }
+
+  .genres-content .bt.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .dt {
+    padding-top: 15px;
+  }
+
+  .genre-list .ls {
+    font-size: 12px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .genre-list .og {
+    font-size: 14px;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .genre-list .og span {
+    font-weight: 700;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .filterDiv {
+    float: left;
+    width: 32%;
+    text-align: center;
+    margin: 2px;
+    display: none;
+    /*border: 1px solid lightgrey;*/
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .genres-content {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    min-height: 95vh;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #myBtnContainer {
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .genre-list {
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+
+  .genres-content .bt {
+    border: none;
+    outline: none;
+    padding: 5px 8px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .genres-content .bt:hover {
+    background-color: #ddd;
+  }
+
+  .genres-content .bt.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .dt {
+    padding-top: 5px;
+  }
+
+  .genre-list .og {
+    font-size: 14px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .genre-list .og span {
+    font-weight: 700;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  .filterDiv {
+    float: left;
+    width: 24.6%;
+    text-align: center;
+    margin: 2px;
+    display: none;
+    /* /*border: 1px solid lightgrey;*/ */
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .genres-content {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    min-height: 90vh;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  #myBtnContainer {
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .genre-list {
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+
+  .genres-content .bt {
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .genres-content .bt:hover {
+    background-color: #ddd;
+  }
+
+  .genres-content .bt.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .dt {
+    padding-top: 5px;
+  }
+
+  .genre-list .og {
+    font-size: 14px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .genre-list .og span {
+    font-weight: 700;
+  }
+}
