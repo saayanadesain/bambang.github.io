@@ -14,10 +14,10 @@ $(document).ready(function() {
 
 // loadMore
 $(document).ready(function(){
-  $(".content").slice(0, 20).show();
+  $(".content").slice(0, 50).show();
   $("#loadMore").on("click", function(e){
     e.preventDefault();
-    $(".content:hidden").slice(0, 20).slideDown();
+    $(".content:hidden").slice(0, 50).slideDown();
     if($(".content:hidden").length == 0) {
       $("#loadMore").text(" ").addClass("noContent");
     }
