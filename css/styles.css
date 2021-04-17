@@ -15,36 +15,14 @@ body {
 }
 
 /* Slider */
-.tpr h3, .ct h3, .ut h3, .gnr h3 {
-  font-size: 20px;
-  font-weight: 600;
-  padding-top: 1px;
-  padding-bottom: 5px;
-}
-
-.tpr {
-  width: 180px;
-  margin-bottom: 10px;
-}
-
-.ct {
-  width: 165px;
-}
-
-.ut {
-  width: 170px;
-}
-
-
 .box {
-  border-radius: 10px;
   width: 280px;
-  height: 150px;
-  overflow: hidden;
+  height: 250px;
   background-color: white;
   margin-right: 5px;
   align-items: center;
   align-content: center;
+  border-radius: 10px;
 }
 
 .box:hover {
@@ -54,9 +32,9 @@ body {
 .box-img {
   width: 110px;
   height: 100%;
-  border-radius: 10px;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .box-img img {
@@ -70,7 +48,7 @@ body {
   opacity: 0.8;
 }
 
-.rating span {
+/*.rating span {
   color: orange;
   font-size: 14px;
 }
@@ -79,7 +57,7 @@ body {
   margin-top: -10px;
 }
 
-.detail {
+ .detail {
   position: relative;
   margin-top: -148px;
   margin-left: 110px;
@@ -134,7 +112,7 @@ h6 {
   color: grey;
   font-weight: 100;
   font-size: 14px;
-}
+} */
 
 .unl {
   border: 1px solid grey;
@@ -144,7 +122,7 @@ h6 {
 }
 
 /* Update terakhir */
-.flex {
+/*.flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -157,12 +135,12 @@ h6 {
   width: 48%;
   color: #fff;
   font-size: 24px;
-  line-height: 100px; /* centering text just for view */
+  line-height: 100px;
   text-align: center;
   background-color: grey;
   margin: 5px;
   display: none;
-  /* border: 1px solid lightgrey; */
+  border: 1px solid lightgrey;
 }
 
 #loadMore {
@@ -190,13 +168,13 @@ h6 {
   color: #000 !important;
   background-color: transparent !important;
   pointer-events: none;
-}
+} */
 
 /* Mobile Version (Potrait) */
 @media (max-width: 576px) {
   /*navbar*/
   .navbar .navbar-brand {
-    font-weight: 900;
+    font-weight: 700;
     margin-left: 0px;
     font-size: 20px;
   }
@@ -206,129 +184,210 @@ h6 {
   }
 
   .nav-item {
-    height: 35px;
+    height: 29px;
   }
 
   .navbar li a {
-    font-weight: 400;
-    padding-bottom: 15px;
-  }
-
-  .navbar .d-flex {
-    margin-top: 25px;
-  }
-
-  .slide {
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-
-  /* Chapter Terbaru */
-  .konten {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    background-color: #e0f1ff;
-    margin-top: 20px;
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  .chater {
-    width: 100%;
-    height: 98vh;
-    overflow: hidden;
-  }
-
-  .scr {
-    width: 100%;
-    height: 89vh;
-    border-radius: 10px;
-    /* background-color: #f5f5f5; */
-    margin-top: 5px;
-  }
-
-  .bx {
-    width: 100%;
-    height: 150px;
-    background-color: transparent;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-
-  .bx:hover {
-    box-shadow: none;
-  }
-
-  .bx-img {
-    width: 120px;
-  }
-
-  .dt {
-    position: relative;
-    margin-top: -148px;
-    margin-left: 120px;
-    height: 100%;
-    padding: 0px 10px 10px 10px;
-  }
-
-  .dt h5 {
     font-size: 16px;
   }
 
-  .dt .rating {
-    font-size: 14px;
-    margin-top: -5px;
+  .search-bar{
+    display: none;
   }
 
-  .dt .reader {
+  .search-bar-hp {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .search-bar-hp input, .search-bar-hp button{
     font-size: 12px;
   }
 
-  .dt .tgl h6 {
-    font-size: 14px;
-    margin-top: 5px;
-    color: black;
-    font-weight: 400;
-  }
-
-  .dt .chp {
-    margin:auto;
-    margin-top: 0px;
-    position:relative;
-  }
-
-  .dt .chp span {
-    background-color: #45b051;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding: 3px 5px 3px 5px;
-    font-size: 16px;
-    color: white;
-    font-weight: 600;
-  }
-
+  /*title section*/
   .tpr, .ct, .ut, .gnr {
     color: black;
     background-color: transparent;
     text-align: left;
-    margin-top: 20px;
     width: 100%;
-    font-weight: 700;
     border-bottom: 2px solid grey;
     border-radius: 0;
   }
 
-
   .tpr h3, .ct h3, .ut h3, .gnr h3 {
-    font-size: 18px;
+    font-size: 14px;
     margin: auto;
     padding: 5px;
+    font-weight: bold;
   }
 
   .ct, .ut {
     margin: auto;
+  }
+
+  /* Slide */
+  .slide{
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .slider{
+    height: 225px;
+    margin-top: 10px;
+  }
+
+  .box{
+    width: 100px;
+    height: 225px;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 0px;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+
+  .box:hover{
+    box-shadow: none;
+  }
+
+  .box-img{
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .item{
+    height: 250px;
+  }
+
+  .detail{
+    margin-top: 5px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .detail h5 a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: left;
+  }
+
+  .detail h5 a:hover{
+    color: green;
+  }
+
+  .rating span {
+    color: orange;
+    font-size: 10px;
+  }
+
+  .rating {
+    margin-top: -15px;
+  }
+
+  .detail .reader {
+    color: grey;
+    font-size: 10px;
+    margin-top: -3px;
+  }
+
+  .detail .og {
+    font-size: 10px;
+    margin-top: 0px;
+  }
+
+
+  /* Chapter Terbaru */
+  .konten {
+    width: 94%;
+    margin: auto;
+    margin-top: 10px;
+    align-content: center;
+  }
+
+  .chater {
+    width: 100%;
+    padding-top: 10px;
+    background-color: #e0f1ff;
+  }
+
+  .scr {
+    width: 100%;
+    height: 90vh;
+    /* background-color: #f5f5f5; */
+    margin-top: 5px;
+  }
+
+  .konten-ut{
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .bx{
+    float: left;
+    display: block;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    width: 48%;
+    height: 100px;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 0px;
+    display: flex;
+  }
+
+  .bx .box-img{
+    width: 140px;
+    height: 100%;
+  }
+
+  .bx .box-img{
+    object-fit: cover;
+  }
+
+  .bx .detail{
+    position: relative;
+    padding-left: 5px;
+    padding-top: 2px;
+  }
+
+  .bx .rating span {
+    color: orange;
+    font-size: 10px;
+  }
+
+   .bx .rating {
+    margin-top: -16px;
+  }
+
+  .bx .og {
+    font-size: 10px;
+    margin-top: -3px;
+    margin-bottom: 3px;
+  }
+
+  .chp {
+    position: absolute;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #45b051;
+    width: 50px;
+    text-align: center;
+    color: white;
   }
 
   /* Update Terakhir */
@@ -342,161 +401,50 @@ h6 {
   .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     width: 100%
   }
 
-  .content {
-    height: 150px;
+  .content{
+    display: none;
+    width: 48%;
+    height: 100px;
+    margin-right: 6px;
+    margin-bottom: 8px;
+  }
+
+  .content .bx{
     width: 100%;
-    font-size: 24px; /* centering text just for view */
-    text-align: center;
-    background-color: transparent;
-    margin: 5px;
-    overflow: hidden;
+    height: 100%;
   }
 
   #loadMore {
-    width: 200px;
+    width: 150px;
     color: #fff;
     display: block;
     text-align: center;
-    margin: 20px auto;
-    padding: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px;
     border-radius: 10px;
-    border: 1px solid transparent;
     background-color: blue;
     transition: .3s;
-  }
-
-  #loadMore:hover {
-    color: blue;
-    background-color: #fff;
-    border: 1px solid blue;
     text-decoration: none;
   }
+
+  .pg {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+  }
+
+
 
   .noContent {
     color: #000 !important;
     background-color: transparent !important;
     pointer-events: none;
-  }
-
-  .bx-img2 {
-    position: relative;
-    height: 100%;
-    width: 120px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .bx-img2 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    transition: transform 0.5s;
-  }
-
-  .bx-img2 img:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-  }
-
-  .dtl {
-    margin-top: -148px;
-    margin-left: 120px;
-    height: 100%;
-    text-align: left;
-    padding-left: 8px;
-  }
-
-  .dtl h5 {
-    overflow: hidden;
-    position: relative;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: left;
-    width: 100%;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-
-  .dtl h5 a {
-    text-decoration: none;
-    color: black;
-    letter-spacing: 0.5px;
-  }
-
-  .stars {
-    margin-top: -48px;
-  }
-
-  .stars span {
-    color: orange;
-    font-size: 14px;
-  }
-
-  .dtl .rdr {
-    color: grey;
-    font-size: 12px;
-    margin-top: -80px;
-    font-weight: 600;
-    display: visible;
-  }
-
-  .dtl .date h6 {
-    color: black;
-    margin-top: -35px;
-    font-size: 14px;
-  }
-
-  .dtl .chap {
-    margin: auto;
-    margin-top: -40px;
-  }
-
-  .dtl .chap span {
-    background-color: #45b051;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding: 3px 5px 3px 5px;
-    font-size: 16px;
-    color: white;
-    font-weight: 600;
-  }
-
-  /* Genres */
-  .genre {
-    height: 120px;
-    margin-top: -10px;
-  }
-
-
-  #id01 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  #id01 li {
-    display: inline-block;
-    width: 32%;
-    text-align: left;
-  }
-
-  #id01 li a {
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-  }
-
-  #id01 li a:hover {
-    color: green;
   }
 
   /* Footer */
@@ -533,7 +481,7 @@ h6 {
   }
 
   .nav-item {
-    height: 28px;
+    height: 35px;
     margin-bottom: 0px;
   }
 
@@ -607,7 +555,7 @@ h6 {
     margin-top: -118px;
     margin-left: 90px;
     height: 100%;
-    padding-left: 8px;
+    padding-left: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
   }
@@ -617,25 +565,30 @@ h6 {
   }
 
   .dt .rating {
+    margin-top: -14px;
+  }
+
+  .dt .rating span {
     font-size: 12px;
-    margin-top: -5px;
   }
 
   .dt .reader {
     font-size: 10px;
+    margin-top: -2px;
   }
 
   .dt .tgl h6 {
     font-size: 12px;
     color: black;
-    font-weight: 400;
+    margin-top: 1px;
   }
 
-   .dt .chp {
+  .dt .chp {
     margin: auto;
     width: 100%;
     position:relative;
     margin-top: -9px;
+    position: absolute;
   }
 
   .dt .chp span {
@@ -643,7 +596,7 @@ h6 {
     background-color: #45b051;
     border-radius: 10px;
     padding: 3px 8px 3px 8px;
-    font-size: 14px;
+    font-size: 13px;
     color: white;
     font-weight: 600;
   }
@@ -683,7 +636,6 @@ h6 {
     width: 100%;
   }
 
-  /* Update terakhir */
   .flex {
     display: flex;
     flex-wrap: wrap;
@@ -694,14 +646,14 @@ h6 {
 
   .content {
     height: 120px;
-    width: 47%;
+    width: 49%;
     font-size: 24px; /* centering text just for view */
     text-align: center;
     background-color: transparent;
     overflow: hidden;
     margin-top: 0px;
     margin-left: 0px;
-    margin-right: 13px;
+    margin-right: 3px;
     margin-bottom: 10px;
   }
 
@@ -735,8 +687,9 @@ h6 {
     position: relative;
     height: 100%;
     width: 85px;
-    border-radius: 10px;
     overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .bx-img2 img{
@@ -757,11 +710,12 @@ h6 {
     height: 100%;
     text-align: left;
     padding-left: 8px;
-    padding-top: 10px;
+    padding-top: 1px;
     position: relative;
   }
 
   .dtl h5 {
+    color: black;
     overflow: hidden;
     position: relative;
     font-weight: 700;
@@ -781,24 +735,24 @@ h6 {
   }
 
   .stars {
-    margin-top: -54px;
+    margin-top: -50px;
   }
 
   .stars span {
     color: orange;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .dtl .rdr {
     color: grey;
     font-size: 10px;
     margin-top: -80px;
-    display: none;
+    display: visible;
   }
 
   .dtl .date h6 {
     color: black;
-    margin-top: -40px;
+    margin-top: -42px;
     font-size: 12px;
   }
 
@@ -856,6 +810,7 @@ h6 {
     font-size: 14px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 20px;
   }
 
   .ftr {
@@ -887,7 +842,6 @@ h6 {
   }
 
   .navbar li a {
-    font-weight: 600;
     margin-left: 1px;
   }
 
@@ -921,7 +875,7 @@ h6 {
 
   .bx {
     width: 100%;
-    height: 140px;
+    height: 125px;
     background-color: transparent;
     margin-bottom: 10px;
   }
@@ -931,15 +885,16 @@ h6 {
   }
 
   .bx-img {
-    width: 100px;
+    width: 95px;
     height: 100%;
   }
 
   .dt {
     position: relative;
-    margin-top: -138px;
+    margin-top: -123px;
     margin-left: 100px;
     height: 100%;
+    padding-top: 3px;
   }
 
   .dt h5 {
@@ -948,22 +903,23 @@ h6 {
 
   .dt .rating {
     font-size: 12px;
-    margin-top: -5px;
+    margin-top: -7px;
   }
 
   .dt .reader {
     font-size: 10px;
+    margin-top: 2px;
   }
 
   .dt .tgl h6 {
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 2px;
     color: black;
     font-weight: 400;
   }
 
   .dt .chp{
-    margin: auto;
+    margin-top: -9px;
     text-align: left;
     width: 100%;
   }
@@ -1008,7 +964,10 @@ h6 {
     height: 100vh;
   }
 
-  /* Update terakhir */
+  .scr2 {
+    margin-top: 0px;
+  }
+
   .flex {
     display: flex;
     flex-wrap: wrap;
@@ -1018,13 +977,14 @@ h6 {
   }
 
   .content {
-    height: 120px;
+    height: 125px;
     width: 47%;
     font-size: 24px; /* centering text just for view */
     text-align: center;
     background-color: transparent;
     margin: 5px;
     overflow: hidden;
+    margin-bottom: 6px;
   }
 
   #loadMore {
@@ -1057,8 +1017,9 @@ h6 {
     position: relative;
     height: 100%;
     width: 90px;
-    border-radius: 10px;
     overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .bx-img2 img{
@@ -1075,12 +1036,12 @@ h6 {
   }
 
   .dtl {
-    margin-top: -118px;
+    margin-top: -123px;
     margin-left: 90px;
     height: 100%;
     text-align: left;
     padding-left: 8px;
-    padding-top: 8px;
+    padding-top: 3px;
     position: relative;
   }
 
@@ -1104,19 +1065,19 @@ h6 {
   }
 
   .stars {
-    margin-top: -54px;
+    margin-top: -51px;
   }
 
   .stars span {
     color: orange;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .dtl .rdr {
     color: grey;
     font-size: 10px;
-    margin-top: -80px;
-    display: none;
+    margin-top: -81px;
+    display: visible;
   }
 
   .dtl .date h6 {
@@ -1126,7 +1087,7 @@ h6 {
   }
 
   .dtl .chap {
-    margin-top: -45px;
+    margin-top: -44px;
     color: black;
   }
 
@@ -1257,6 +1218,8 @@ h6 {
   .bx-img {
     width: 110px;
     height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 
   .dt {
@@ -1265,7 +1228,7 @@ h6 {
     margin-left: 110px;
     height: 100%;
     padding-left: 10px;
-    padding-top: 2px;
+    padding-top: 5px;
   }
 
   .dt h5 {
@@ -1279,6 +1242,7 @@ h6 {
 
   .dt .reader {
     font-size: 10px;
+    margin-top: 3px;
   }
 
   .dt .tgl h6 {
@@ -1289,7 +1253,7 @@ h6 {
   }
 
   .dt .chp {
-    margin: auto;
+    margin-top: -6px;
     position:relative;
   }
 
@@ -1325,8 +1289,6 @@ h6 {
     margin: auto;
   }
 
-
-
   /* Update Terakhir */
   .upter {
     display: flex;
@@ -1335,7 +1297,6 @@ h6 {
     height: 100vh;
   }
 
-  /* Update terakhir */
   .flex {
     display: flex;
     flex-wrap: wrap;
@@ -1384,8 +1345,9 @@ h6 {
     position: relative;
     height: 100%;
     width: 110px;
-    border-radius: 10px;
     overflow: hidden;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 
   .bx-img2 img{
@@ -1407,8 +1369,12 @@ h6 {
     height: 100%;
     text-align: left;
     padding-left: 8px;
-    padding-top: 10px;
+    padding-top: 5px;
     position: relative;
+  }
+
+  .scr2 {
+    margin-top: 0px;
   }
 
   .dtl h5 {
@@ -1416,7 +1382,7 @@ h6 {
     overflow: hidden;
     position: relative;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     width: 97%;
     text-overflow: ellipsis;
@@ -1432,29 +1398,30 @@ h6 {
   }
 
   .stars {
-    margin-top: -50px;
+    margin-top: -46px;
   }
 
   .stars span {
     color: orange;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .dtl .rdr {
     color: grey;
     font-size: 10px;
-    margin-top: -80px;
+    margin-top: -83px;
     display: flex;
+    padding-top: 3px;
   }
 
   .dtl .date h6 {
     color: black;
-    margin-top: -40px;
+    margin-top: -38px;
     font-size: 12px;
   }
 
   .dtl .chap {
-    margin-top: -45px;
+    margin-top: -43px;
     color: black;
   }
 
@@ -1506,6 +1473,7 @@ h6 {
     padding-top: 12px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 40px;
   }
 }
 
@@ -1575,6 +1543,8 @@ h6 {
 
   .bx-img {
     width: 110px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 
   .dt {
@@ -1669,6 +1639,7 @@ h6 {
     background-color: transparent;
     margin: 5px;
     overflow: hidden;
+    margin-bottom: 5px;
   }
 
   #loadMore {
@@ -1701,8 +1672,9 @@ h6 {
     position: relative;
     height: 100%;
     width: 110px;
-    border-radius: 10px;
     overflow: hidden;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 
   .bx-img2 img{
@@ -1718,13 +1690,17 @@ h6 {
     opacity: 0.8;
   }
 
+  .scr2{
+    margin-top: 0px;
+  }
+
   .dtl {
     margin-top: -150px;
     margin-left: 110px;
     height: 100%;
     text-align: left;
     padding-left: 8px;
-    padding-top: 8px;
+    padding-top:6px;
     position: relative;
   }
 
@@ -1733,7 +1709,7 @@ h6 {
     overflow: hidden;
     position: relative;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     width: 97%;
     text-overflow: ellipsis;
@@ -1749,29 +1725,29 @@ h6 {
   }
 
   .stars {
-    margin-top: -50px;
+    margin-top: -49px;
   }
 
   .stars span {
     color: orange;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .dtl .rdr {
     color: grey;
     font-size: 10px;
-    margin-top: -80px;
+    margin-top: -83px;
     display: flex;
   }
 
   .dtl .date h6 {
     color: black;
-    margin-top: -40px;
+    margin-top: -38px;
     font-size: 12px;
   }
 
   .dtl .chap {
-    margin-top: -45px;
+    margin-top: -42px;
     color: black;
   }
 
@@ -1795,6 +1771,11 @@ h6 {
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+
+  #id01 span {
+    font-weight:100;
+    color: grey;
   }
 
   #id01 li {
@@ -1821,9 +1802,8 @@ h6 {
     height: 70px;
     color: white;
     padding-top: 10px;
-    margin-top: 0px;
+    margin-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
   }
-
 }
