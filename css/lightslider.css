@@ -391,3 +391,10 @@
   cursor: -ms-grabbing;
   cursor: grabbing;
 }
+
+/* Mobile Version (Potrait) */
+@media (max-width: 576px) {
+  .lSAction > a {
+    background-image: none;
+  }
+}
