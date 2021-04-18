@@ -163,7 +163,9 @@
     opacity: 0.5;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
+    display: hidden;
 }
+
 .lSAction > a:hover {
     opacity: 1;
 }
@@ -397,4 +399,28 @@
   .lSAction > a {
     background-image: none;
   }
+}
+
+/* Mobile Version (Landscape) */
+@media (min-width: 576.1px) {
+  .lSAction > a {
+    background-image: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 767px) {
+  .lSAction > a {
+    background-image: none;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+
 }
