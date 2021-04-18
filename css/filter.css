@@ -68,6 +68,15 @@
     height: 150px;
   }
 
+  .genre-list .og{
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
+  }
 }
 
 /* Mobile Version (Landscape) */
@@ -140,6 +149,16 @@
 
   .genre-list .box-img{
     height: 120px;
+  }
+
+  .genre-list .og{
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
   }
 }
 
@@ -214,6 +233,16 @@
   .genre-list .box-img{
     height: 120px;
   }
+
+  .genre-list .og{
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
+  }
 }
 
 /* Desktop */
@@ -286,6 +315,16 @@
   .genre-list .box-img{
     height: 120px;
   }
+
+  .genre-list .og{
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
+  }
 }
 
 /* Large Desktop */
@@ -357,5 +396,15 @@
 
   .genre-list .box-img{
     height: 120px;
+  }
+
+  .genre-list .og{
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
   }
 }
