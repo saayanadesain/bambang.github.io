@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/filter.css">
 <body>
-  <section class="navbarr ">
+  <section class="navbarr">
     <nav class="navbar navbar-expand-lg navbar-dark bg">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">BaMbaNg</a>
@@ -19,26 +19,34 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item ">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="list_AZ.html">List A &#129062; Z</a>
+              <a class="nav-link" href="daftar_manga.html">Daftar Manga</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="genres.html">Genres</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ">
               <a class="nav-link" href="#">About Us</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <div class="search-bar">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
       </div>
     </nav>
+  </section>
+  <section class="search-bar-hp">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
   </section>
   <section class="genres-content">
       <!-- <div class="bread-crumb">
@@ -58,162 +66,133 @@
         <button class="bt" onclick="filterSelection('fantasy')">Fantasy</button>
         <button class="bt" onclick="filterSelection('historical')">Historical</button>
         <button class="bt" onclick="filterSelection('josei')">Josei</button>
+        <button class="bt" onclick="filterSelection('mystery')">Mystery</button>
         <button class="bt" onclick="filterSelection('romance')">Romance</button>
         <button class="bt" onclick="filterSelection('school-life')">School Life</button>
+        <button class="bt" onclick="filterSelection('shounen-ai')">Shounen Ai</button>
         <button class="bt" onclick="filterSelection('slice-of-life')">Slice Of Life</button>
       </div>
       <div class="genre-list ">
-        <div class="box bx filterDiv josei romance slice-of-life">
-          <div class="box-img bx-img">
+        <div class="box filterDiv josei romance slice-of-life">
+          <div class="box-img">
             <img src="img/Acquainted-Encounter-Spin-Of-125x180.jpg" alt="">
           </div>
-          <div class="detail dt ">
-            <h5>
-              <a href="#">Acquainted: Encounter Spin-Off</a>
-            </h5>
+          <div class="detail">
+            <h5> <a href="#">Acquainted: Encounter Spin-Off</a> </h5>
             <div class="rating">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
             </div>
             <div class="reader">
-              <span>&#128065; 1.1k/month</span>
+              <span>Realese: 2021</span>
             </div>
-            <div class="ls">
-              Realese: 2021
-            </div>
-            <div class="og ">
-              <span>Josei, Romance, Slice Of Life</span>
+            <div class="og">
+              Josei, Romance, Slice Of Life
             </div>
           </div>
         </div>
-        <div class="box bx filterDiv drama mystery">
-          <div class="box-img bx-img">
+        <div class="box filterDiv drama mystery">
+          <div class="box-img">
             <img src="img/Completion-of-Prescription-125x180.jpg" alt="">
           </div>
-          <div class="detail dt ">
-            <h5>
-              <a href="#">Completion of Prescription</a>
-            </h5>
+          <div class="detail">
+            <h5> <a href="#">Completion of Prescription</a> </h5>
             <div class="rating">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
             </div>
             <div class="reader">
-              <span>&#128065; 1.1k/month</span>
+              <span>Realese: 2021</span>
             </div>
-            <div class="ls">
-              Realese: 2021
-            </div>
-            <div class="og ">
-              <span>Drama, Mystery</span>
+            <div class="og">
+              Drama, Mystery
             </div>
           </div>
         </div>
-        <div class="box bx filterDiv comedy shounen-ai">
-          <div class="box-img bx-img">
+        <div class="box filterDiv comedy shounen-ai">
+          <div class="box-img">
             <img src="img/demon-king-your-big-brother-wants-you-home-for-dinner-125x180.png" alt="">
           </div>
-          <div class="detail dt ">
-            <h5>
-              <a href="#">Demon King Your Big Brother Wants You Home for Dinner</a>
-            </h5>
+          <div class="detail ">
+            <h5> <a href="#">Demon King Your Big Brother Wants You Home for Dinner</a> </h5>
             <div class="rating">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
             </div>
             <div class="reader">
-              <span>&#128065; 1.1k/month</span>
+              <span>Realese: 2021</span>
             </div>
-            <div class="ls">
-              Realese: 2021
-            </div>
-            <div class="og ">
-              <span>Comedy, Shounen Ai</span>
+            <div class="og">
+              Comedy, Shounen Ai
             </div>
           </div>
         </div>
-        <div class="box bx filterDiv romance">
-          <div class="box-img bx-img">
+        <div class="box filterDiv romance">
+          <div class="box-img">
             <img src="img/Love-like-a-dog-fight-193x278.jpg" alt="">
           </div>
-          <div class="detail dt ">
-            <h5>
-              <a href="#">Love Like a Dog Fight </a>
-            </h5>
+          <div class="detail">
+            <h5> <a href="#">Love Like a Dog Fight </a> </h5>
             <div class="rating">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
             </div>
             <div class="reader">
-              <span>&#128065; 1.1k/month</span>
+              <span>Realese: 2021</span>
             </div>
-            <div class="ls">
-              Realese: 2021
-            </div>
-            <div class="og ">
-              <span>Romance</span>
+            <div class="og">
+              Romance
             </div>
           </div>
         </div>
-        <div class="box bx filterDiv action adventure fantasy">
-          <div class="box-img bx-img">
+        <div class="box filterDiv action adventure fantasy">
+          <div class="box-img">
             <img src="img/max-level-returner-193x278.jpg" alt="">
           </div>
-          <div class="detail dt ">
-            <h5>
-              <a href="#">Max Level Returner</a>
-            </h5>
+          <div class="detail">
+            <h5> <a href="#">Max Level Returner</a> </h5>
             <div class="rating">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
             </div>
             <div class="reader">
-              <span>&#128065; 1.1k/month</span>
+              <span>Realese: 2021</span>
             </div>
-            <div class="ls">
-              Realese: 2021
-            </div>
-            <div class="og ">
-              <span>Action, Adventure, Fantasy</span>
+            <div class="og">
+              Action, Adventure, Fantasy
             </div>
           </div>
         </div>
-        <div class="box bx filterDiv fantasy historical romance">
-          <div class="box-img bx-img">
-            <img src="img/My-Aurora-193x278.jpg" alt="">
+        <div class="box filterDiv fantasy historical romance">
+          <div class="box-img">
+            <a href="#"> <img src="img/My-Aurora-193x278.jpg" alt=""> </a>
           </div>
-          <div class="detail dt ">
-            <h5>
+          <div class="detail">
+            <h5 class="">
               <a href="#">My Aurora</a>
             </h5>
             <div class="rating">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
             </div>
             <div class="reader">
-              <span>&#128065; 1.1k/month</span>
+              <span>Realese: 2021</span>
             </div>
-            <div class="ls">
-              Realese: 2021
-            </div>
-            <div class="og ">
-              <span>Fantasy, Historical, Romance</span>
+            <div class="og">
+              Fantasy, Historical, Romance
             </div>
           </div>
         </div>
-        <div class="box bx filterDiv comedy, drama, romance, school-life, slice-of-life">
-          <div class="box-img bx-img">
-            <img src="img/otowa-s-after-school-secrets-125x180.jpg" alt="">
+        <div class="box filterDiv comedy, drama, romance, school-life, slice-of-life">
+          <div class="box-img">
+            <a href="#"> <img src="img/otowa-s-after-school-secrets-125x180.jpg" alt=""> </a>
           </div>
-          <div class="detail dt ">
-            <h5>
+          <div class="detail">
+            <h5 class="">
               <a href="#">Otowa's After School Secrets</a>
             </h5>
             <div class="rating">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
             </div>
             <div class="reader">
-              <span>&#128065; 1.1k/month</span>
+              <span>Realese: 2021</span>
             </div>
-            <div class="ls">
-              Realese: 2021
-            </div>
-            <div class="og ">
-              <span>Comedy, Drama, Romance, School Life, Slice of Life</span>
+            <div class="og">
+              Comedy, Drama, Romance, School Life, Slice Of Life
             </div>
           </div>
         </div>
